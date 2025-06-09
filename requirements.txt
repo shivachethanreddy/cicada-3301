@@ -1,0 +1,10 @@
+react
+react-dom
+react-router-dom
+@react-three/fiber
+@react-three/drei
+tailwindcss
+postcss
+autoprefixer
+firebase
+vite
