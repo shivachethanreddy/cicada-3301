@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+
+body {
+ 
+ 
+  overflow: hidden; /* Prevents double scrollbars */
+}
+
+
+  .neonGlitch {
+    text-shadow:
+      0 0 2px #0f0,
+      0 0 4px #0f0,
+      0 0 8px #0f0,
+      0 0 16px #0f0;
+  }
+
+  @keyframes fly {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+    100% { transform: translateY(0px) rotate(-1deg); }
+  }
+
+
+
+  .animate-fly {
+    animation: fly 3s ease-in-out infinite;
+  }
+.neon-box {
+  border: 2px solid #22ff22;
+  border-radius: 12px;
+  box-shadow:
+    0 0 5px #22ff22,
+    0 0 10px #22ff22,
+    0 0 20px #22ff22;
+  background-color: black;
+  animation: glitch-box 2s infinite linear;
+}
+
+.neon-glow {
+  filter: drop-shadow(0 0 4px #22ff22)
+          drop-shadow(0 0 6px #22ff22)
+          drop-shadow(0 0 8px #22ff22);
+}
+
+@keyframes glitch-box {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(1px, -1px);
+  }
+  40% {
+    transform: translate(-1px, 1px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+}
+

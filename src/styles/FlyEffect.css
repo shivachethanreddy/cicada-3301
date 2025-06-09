@@ -1,0 +1,27 @@
+.flying-cicada {
+  position: absolute;
+  top: 40%;
+  left: -200px;
+  width: 100px;
+  height: auto;
+  z-index: 50;
+  animation: flyAcross 12s linear infinite;
+}
+
+@keyframes flyAcross {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(110vw) rotate(20deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(110vw) rotate(20deg);
+  }
+
+}
+
+
