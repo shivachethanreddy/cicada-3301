@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import cicadaImg from "../assets/cicada.png";
-import eventQr from "../assets/tt.png";
+import eventQr from "../assets/tt.jpg";
 import saiImg from "../assets/sai.jpg";
 
 
