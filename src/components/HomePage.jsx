@@ -267,8 +267,8 @@ function HomePage() {
               <h4 className="text-lg sm:text-xl font-bold text-green-300">👥 Coordinators:</h4>
               <div className="pl-4 space-y-2">
                 <p className="text-sm sm:text-base font-semibold">Student Coordinators:</p>
-                <p className="text-sm sm:text-base">S Sai Puneeth – 📞 9515842305</p>
-                <p className="text-sm sm:text-base">Avula Sathwika – 📞 7013863875</p>
+                <p className="text-sm sm:text-base">S Sai Puneeth </p>
+                <p className="text-sm sm:text-base">Avula Satwika </p>
                 
                 <p className="text-sm sm:text-base font-semibold mt-4">Faculty Coordinators:</p>
                 <p className="text-sm sm:text-base">Dr. Sirisha Daggubati, Sr. Associate Professor, CSED</p>
@@ -402,14 +402,14 @@ function HomePage() {
           {[
             {
               role: "President",
-              name: "Sai Punith",
+              name: "Sai Puneeth",
               email: "245123749061@mvsrec.edu.in",
               image: saiImg,
               isModal: true,
             },
             {
               role: "President",
-              name: "Avula Sathwika",
+              name: "Avula Satwika",
               email: "245123749032@mvsrec.edu.in",
               image: "/images/vp.jpg",
               isModal: false,
