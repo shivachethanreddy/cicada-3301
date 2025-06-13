@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import cicadaImg from "C:/Users/shiva/cicada-3301/src/assets/cicada.png";
-import eventQr from "C:/Users/shiva/cicada-3301/src/assets/tt.jpg";
-import saiImg from "C:/Users/shiva/cicada-3301/src/assets/sai.jpg";
+import cicadaImg from "../assets/cicada.png";
+import eventQr from "../assets/tt.png";
+import saiImg from "../assets/sai.jpg";
 
 
 // Add this above the HomePage function
