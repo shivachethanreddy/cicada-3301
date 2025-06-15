@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import cicadaImg from "../assets/cicada.png";
 import eventQr from "../assets/tt.jpg";
 import saiImg from "../assets/sai.jpg";
+import ev1 from "../assets/ev1-1.jpg";
+import ev2 from "../assets/ev2-1.jpg";
+import ev3 from "../assets/ev3-1.jpg";
+import ev4 from "../assets/ev-4-1.jpg";
+import ev5 from "../assets/ev-5-1.jpg";
+import ev6 from "../assets/ev-6-1.jpg";
+import ev7 from "../assets/ev-7-1.jpg";
 
 
 // Add this above the HomePage function
@@ -350,15 +357,47 @@ function HomePage() {
         <p className="text-lg sm:text-xl">coming soon</p>
       </section>
 
-      {/* Picture Section */}
+   {/* Picture Section */}
       <section
         id="picture"
         className="min-h-screen px-4 sm:px-8 py-12 sm:py-20 text-green-400 flex flex-col items-center justify-center"
       >
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 neonGlitch">Pictures</h2>
-        <p className="text-yellow-300 text-lg sm:text-xl font-semibold animate-pulse text-center">
-          No photos available here for now updated after some events.
-        </p>
+        <button
+          className={`w-full max-w-2xl mb-6 py-4 px-6 rounded-xl font-bold text-xl sm:text-2xl neonGlitch border-2 border-green-400 bg-black/80 text-green-300 shadow-lg hover:bg-green-900/30 transition-all duration-300 flex items-center justify-between`}
+          onClick={() => setShowEventPics((prev) => !prev)}
+        >
+          CICADA-3301 Cybersecurity Club Inauguration
+          <span className="ml-4">{showEventPics ? '▲' : '▼'}</span>
+        </button>
+        {showEventPics && (
+          <div className="w-full max-w-5xl overflow-x-auto pb-4">
+            <div className="flex gap-6 min-w-[700px]">
+              {[ev1, ev2, ev3, ev4, ev5, ev6, ev7].map((img, idx) => (
+                <div key={idx} className="rounded-xl overflow-hidden border-4 border-green-600 shadow-lg bg-black/80 min-w-[300px] max-w-xs flex-shrink-0 cursor-pointer"
+                  onClick={() => { setModalImg(img); setModalOpen(true); }}
+                >
+                  <img src={img} alt={`Event ${idx + 1}`} className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {/* Modal for large event image */}
+        {modalOpen && (
+          <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80" onClick={() => setModalOpen(false)}>
+            <div className="relative" onClick={e => e.stopPropagation()}>
+              <img src={modalImg} alt="Large Event" className="max-w-[90vw] max-h-[80vh] rounded-2xl border-4 border-green-400 shadow-2xl" />
+              <button
+                className="absolute top-2 right-2 bg-black/70 text-green-400 rounded-full p-2 hover:bg-green-400 hover:text-black transition"
+                onClick={() => setModalOpen(false)}
+                aria-label="Close"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+              </button>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Alumni Section */}
