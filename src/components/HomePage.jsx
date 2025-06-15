@@ -38,6 +38,7 @@ function HomePage() {
   const [currentSection, setCurrentSection] = useState('home');
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImg, setModalImg] = useState(null);
+  const [showEventPics, setShowEventPics] = useState(false); 
 
   useEffect(() => {
     const interval = setInterval(() => {
