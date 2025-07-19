@@ -266,25 +266,6 @@ function HomePage() {
             </div>
 
             <div className="space-y-2">
-              <h4 className="text-lg sm:text-xl font-bold text-green-300">🎓 Who Can Attend?</h4>
-              <p className="text-sm sm:text-base">Open to all students from all branches and years.</p>
-              <p className="text-sm sm:text-base">No prior experience needed – just bring your curiosity!</p>
-            </div>
-
-            <div className="space-y-2">
-              <h4 className="text-lg sm:text-xl font-bold text-green-300">👥 Coordinators:</h4>
-              <div className="pl-4 space-y-2">
-                <p className="text-sm sm:text-base font-semibold">Student Coordinators:</p>
-                <p className="text-sm sm:text-base">S Sai Puneeth </p>
-                <p className="text-sm sm:text-base">Avula Satwika </p>
-                
-                <p className="text-sm sm:text-base font-semibold mt-4">Faculty Coordinators:</p>
-                <p className="text-sm sm:text-base">Dr. Sirisha Daggubati, Sr. Associate Professor, CSED</p>
-                <p className="text-sm sm:text-base">Dr. M.V.R Jyothishree, Associate Professor, CSED</p>
-              </div>
-            </div>
-
-            <div className="space-y-2">
               <h4 className="text-lg sm:text-xl font-bold text-green-300">✅ Registration:</h4>
               <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
                 <p className="text-sm sm:text-base mb-2 sm:mb-0">Scan the QR code to register. Limited seats available for the workshop – hurry!</p>
@@ -295,10 +276,7 @@ function HomePage() {
               </div>
             </div>
 
-            <div className="space-y-2">
-              
-              <p className="text-sm sm:text-base">🎖 Sponsored by: Computer Society of India (CSI)</p>
-            </div>
+          
           </div>
 
        
